@@ -1,0 +1,47 @@
+<mapper namespace="com.wang.dao.StudentDao">
+    <insert id="saveStudent" paramType="com.wang.entity.User"
+            resultType="com.wang.entity.User">
+
+
+
+
+
+
+
+
+
+                                                                                insert into Student values (?,?,?)
+
+
+
+
+
+
+
+
+
+
+    </insert>
+    <select id="findStudent" resu1tType="com.wang.entity.User" paramType="com.wang.entity.User"
+            resultType="com.wang.entity.User">
+
+
+
+
+
+
+
+
+
+                                                                                    select * from Student where id = ?
+
+
+
+
+
+
+
+
+
+    </select>
+</mapper>

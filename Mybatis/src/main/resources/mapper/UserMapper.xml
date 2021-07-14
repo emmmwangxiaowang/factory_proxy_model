@@ -1,0 +1,39 @@
+<mapper namespace="com.wang.dao.UserDao">
+    <insert id="saveUser" paramType="com.wang.entity.User"
+            resultType="com.wang.entity.User">
+
+
+
+
+
+
+
+                                                                insert into user values (?,?,?)
+
+
+
+
+
+
+
+
+    </insert>
+    <select id="finduser" paramType="com.wang.entity.User"
+            resultType="com.wang.entity.User">
+
+
+
+
+
+
+
+                                                                    select * from user where id = ?
+
+
+
+
+
+
+
+    </select>
+</mapper>

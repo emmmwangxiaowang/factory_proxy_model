@@ -3,6 +3,7 @@ package com.wang;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
+//静态代理
 public class Agent implements InvocationHandler
 {
     private Object object;

@@ -10,7 +10,38 @@
     <modules>
         <module>factory-pattern</module>
         <module>proxy</module>
+        <module>Mybatis</module>
     </modules>
     <packaging>pom</packaging>
+
+    <properties>
+        <mysql.connector.java.version>8.0.25</mysql.connector.java.version>
+        <hikari.version>2.1</hikari.version>
+        <druid.version>1.2.2</druid.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.connector.java.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>dev.tuxjsql</groupId>
+                <artifactId>hikaricp-cp</artifactId>
+                <version>${hikari.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
 
 </project>
